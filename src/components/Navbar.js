@@ -21,9 +21,6 @@ import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import HistoryIcon from '@mui/icons-material/History';
 import logo from '../assets/winnerslogo.png'
-import SearchIcon from '@mui/icons-material/Search';
-
-import '../css/Navbar.css' 
 
 const drawerWidth = 240;
 
@@ -106,7 +103,6 @@ export default function Navbar() {
   };
 
   return (
-    <nav>
     <Box sx={{ display: 'flex' }} >
 
       <CssBaseline />
@@ -127,17 +123,10 @@ export default function Navbar() {
           >
             <MenuIcon />
           </IconButton>
-          <div style={{display: 'flex', width: '100%', jusrifyContent: 'space-between', alignItems: 'center'}}>
-          <Typography variant="h6" noWrap component="div" width='100%'>
-            <form>
-              <input type="text" placeholder='Search Names'/>
-              <SearchIcon style={{width: '25px', cursor: 'pointer', color: 'rgba(0,0,0,0.3)'}}/>
-            </form>
+
+          <Typography variant="h6" noWrap component="div" align='right'>
+             <img src={logo} alt="" width="50px" />
           </Typography>
-          <Typography variant="h6" noWrap component="div" width='100%' align='right' >
-             <img src={logo} alt="" width="50px" style={{marginTop: '8px'}}/>
-          </Typography>
-          </div>
         </Toolbar>
         </div>
       </AppBar>
@@ -145,9 +134,8 @@ export default function Navbar() {
       <Drawer variant="permanent" open={open}>
         <div style={{display: 'flex'}}>
         <DrawerHeader>
-          <div style={{marginRight: '60px', marginLeft: '15px'}}>
-            {/* <img src={logo} alt="" width="50px" /> */}
-            <h3>Attendance</h3>
+          <div style={{marginRight: '130px'}}>
+            <img src={logo} alt="" width="50px" />
           </div>
           <div>
           <IconButton onClick={handleDrawerClose}>
@@ -187,6 +175,5 @@ export default function Navbar() {
         </List>
       </Drawer>
     </Box>
-    </nav>
   );
 }

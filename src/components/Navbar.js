@@ -134,7 +134,7 @@ export default function Navbar() {
       <Drawer variant="permanent" open={open}>
         <div style={{display: 'flex'}}>
         <DrawerHeader>
-          <div style={{marginRight: '65px', marginLeft: '15px'}}>
+          <div style={{marginRight: '60px', marginLeft: '15px'}}>
             {/* <img src={logo} alt="" width="50px" /> */}
             <h3>Attendance</h3>
           </div>

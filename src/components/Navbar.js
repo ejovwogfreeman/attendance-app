@@ -125,7 +125,7 @@ export default function Navbar() {
           </IconButton>
 
           <Typography variant="h6" noWrap component="div" align='right' width='100%'>
-             <img src={logo} alt="" width="50px" />
+             <img src={logo} alt="" width="50px" style={{marginTop: '8px'}}/>
           </Typography>
         </Toolbar>
         </div>
@@ -134,8 +134,9 @@ export default function Navbar() {
       <Drawer variant="permanent" open={open}>
         <div style={{display: 'flex'}}>
         <DrawerHeader>
-          <div style={{marginRight: '130px'}}>
-            <img src={logo} alt="" width="50px" />
+          <div style={{marginRight: '60px', marginLeft: '15px'}}>
+            {/* <img src={logo} alt="" width="50px" /> */}
+            <h3>Attendance</h3>
           </div>
           <div>
           <IconButton onClick={handleDrawerClose}>

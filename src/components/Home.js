@@ -1,8 +1,9 @@
 import React from 'react'
+import '../css/Home.css'
 
 const Home = ({data}) => {
   return (
-    <div style={{marginTop: '80px', marginLeft: '90px'}}>
+    <div className='home-container'>
         Rendering home page...
         {/* {data.map((d)=>{
             return (

@@ -124,8 +124,8 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
 
-          <Typography variant="h6" noWrap component="div">
-            <img src={logo} alt="" width="50px"/>
+          <Typography variant="h6" noWrap component="div" align='right' width='100%'>
+             <img src={logo} alt="" width="50px" />
           </Typography>
         </Toolbar>
         </div>

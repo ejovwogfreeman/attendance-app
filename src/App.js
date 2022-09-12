@@ -12,7 +12,7 @@ function App() {
       useEffect(()=> {
         setTimeout(()=> {
           setIsloading(false)
-        }, 1000)
+        }, 3000)
       })
 
       if(isLoading){
